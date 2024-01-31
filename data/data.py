@@ -1,3 +1,5 @@
 from locators.main_locators import *
 
-email = "tussipbekova8gmail.com"
+email = "tulendiyeva@gmail.com"
+
+password = "Qa2024"

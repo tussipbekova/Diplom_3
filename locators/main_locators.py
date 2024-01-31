@@ -4,6 +4,16 @@ main_page_title_locator = [By.XPATH, ".//h1[text()='Соберите бурге�
 
 login_button_locator = [By.XPATH, ".//button[text()='Войти в аккаунт']"]
 
+personal_account_button = [By.XPATH, ".//p[text()='Личный Кабинет']"]
+
+
+
+
+
+
+
+
+
 
 
 

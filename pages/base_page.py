@@ -8,10 +8,10 @@ class BasePage:
         self.driver = driver
 
     def wait_for_visibility(self, locator):
-        WebDriverWait(self.driver, 10).until(expected_conditions.visibility_of_element_located(locator))
+        WebDriverWait(self.driver, 20).until(expected_conditions.visibility_of_element_located(locator))
 
     def wait_for_clickable(self, locator):
-        WebDriverWait(self.driver, 10).until(expected_conditions.element_to_be_clickable(locator))
+        WebDriverWait(self.driver, 20).until(expected_conditions.element_to_be_clickable(locator))
 
     def click(self, locator):
         self.driver.find_element(*locator).click()

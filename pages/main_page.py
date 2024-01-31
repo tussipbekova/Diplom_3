@@ -15,6 +15,10 @@ class MainPage(BasePage):
     def click_to_login_button(self):
         self.click(login_button_locator)
 
+    @allure.step('Клик по кнопке Личный кабинет')
+    def click_to_personal_account_button(self):
+        self.click(personal_account_button)
+
 
 
 
