@@ -1,6 +1,6 @@
 import allure
 
-from locators.main_locators import *
+from locators.forgot_password_locators import restore_button_locator, email_field_locator
 from pages.base_page import BasePage
 
 

@@ -1,11 +1,10 @@
 import allure
 
-from locators.main_locators import *
+from locators.login_page_locators import restore_password_link_locator, header_login_locator
 from pages.base_page import BasePage
 
 
 class LoginPage(BasePage):
-
 
     @allure.step('Ожидание загрузки заголовка Вход')
     def wait_for_load_main_field(self):

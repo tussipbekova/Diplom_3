@@ -1,6 +1,6 @@
 import allure
 
-from locators.main_locators import *
+from locators.reset_password_locators import show_hide_password_button_locator, active_password_field_locator
 from pages.base_page import BasePage
 
 
