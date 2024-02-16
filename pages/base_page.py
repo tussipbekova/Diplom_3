@@ -1,3 +1,4 @@
+from selenium.webdriver import ActionChains
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -26,5 +27,14 @@ class BasePage:
         element = self.driver.find_element(*locator)
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
 
-    def get_element(self,locator):
+    def get_element(self, locator):
         return self.driver.find_element(*locator)
+
+    def drag_and_drop(self, source, target):
+        action = ActionChains(self.driver)
+        action.drag_and_drop(source, target).perform()
+
+    def scroll_to_element_by_locator(self, locator):
+        element = WebDriverWait(self.driver, 20).until(expected_conditions.visibility_of_element_located(locator))
+        self.driver.execute_script("arguments[0].scrollIntoView();", element)
+        return element

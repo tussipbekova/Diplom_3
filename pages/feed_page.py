@@ -1,7 +1,6 @@
 import allure
 
 from locators.feed_locators import feed_page_title_locator
-from locators.main_locators import *
 from pages.base_page import BasePage
 
 
